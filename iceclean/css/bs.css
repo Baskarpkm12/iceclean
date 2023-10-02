@@ -1,5 +1,12 @@
+.arrow {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    z-index: 4;
+}
+
 .container1 {
-    background-image: url(/iceclean/images/work.jfif);
+    background-image: url(work.jfif);
     background-attachment: fixed;
     background-position: bottom;
     background-repeat: no-repeat;
@@ -15,6 +22,10 @@
 
 .navbar {
     display: none;
+}
+
+.container1b img {
+    width: 50%;
 }
 
 .container1d img {
@@ -42,7 +53,7 @@
 }
 
 .container5 {
-    background-image: url(/iceclean/images/bg14k.jpg);
+    background-image: url(./bg14k.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -65,15 +76,14 @@
 }
 
 @media(max-width:576px) {
+    .container1b img {
+        width: 100%;
+    }
     .container1c {
         display: none;
     }
     .navbar {
         display: block;
-        position: absolute;
-        z-index: 4;
-        right: 30px;
-        top: 170px;
     }
     .links {
         right: 10px;
